@@ -147,5 +147,5 @@
 // console.log(myBioData.indexOf("Thapa"));
 
 //last index of()
-const myBioData = 'i am the thapa  technical';
-console.log(myBioData.lastIndexOf("t", 6));
+// const myBioData = 'i am the thapa  technical';
+// console.log(myBioData.lastIndexOf("t", 6));

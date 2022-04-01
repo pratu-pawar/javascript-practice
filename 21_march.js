@@ -163,3 +163,4 @@
 //console.log(Math.trunc(4.6));
 //console.log(Math.trunc(-99.1));
 
+console.log(Math.trunc(-34.5));
