@@ -2,6 +2,11 @@
 //Create a function that takes two numbers as arguments and returns their sum.
 //For example if you write a function "addition", then "addition(2, 4)" should return 6
 //Please write you answer below:
+ans :
+// var x = 2;
+// var y = 4;
+// sum = x + y;
+// console.log(sum);
 
 
 
@@ -14,6 +19,12 @@
 //Please write you answer below:
 
 
+//var getFirstValue = [1, 2, 3];
+
+//console.log(getFirstValue[0]);
+
+
+
 
 
 
@@ -23,17 +34,26 @@
 //For example if you write a function "howManySeconds", then "howManySeconds(2)" should return 7200 (here "2" is hours)
 //Please write you answer below:
 
+//function  howManySeconds (hours) { 
+   // return hours * 3600;
+
+//}
+ //var howManySeconds =  (h) => h * 3600
+ //console.log(howManySeconds(2));
 
 
-
-
-
-
+ 
 // Question 4 :
 //Create a function that takes length and width and finds the perimeter of a rectangle.
 //For example if you write a function "findPerimeter", then "findPerimeter(6, 7)" should return 26. Formula for finding perimeter is 2 * (length + width)
 //Please write you answer below:
 
+// var p = "perimeter of rectangle"
+// var l = 6, W = 7;
+// switch(p){ 
+//     case "perimeter of rectangle":
+//         console.log("the p of the perimeter of rectangle:" + 2 * (l * W));
+//}
 
 
 
@@ -46,7 +66,12 @@
 //For example if you write a function "lessThan100", then "lessThan100(22, 15)" should return true as addition of 22 and 15 is 37 which is less than 100
 //Please write you answer below:
 
-
+// var a = 22;
+// var b = 15;
+// var sum = a + b;
+// //console.log(sum);
+// 37 < 100;
+// console.log(37 < 100);
 
 
 
@@ -58,6 +83,12 @@
 // Write the use of "&&" operator and "||" operator, write in comments 
 //Please write you answer below:
 
+// use && operator//
 
+// var a = 30 ;
+// var b = -20;
+// console.log(a > b && b < 0 && a > 0);
 
+// //use || operator//
 
+// console.log((a < b) || (b > 0) || (b < a));
