@@ -65,10 +65,10 @@
  
 
 // 22 +15 = 37;
-function lessthan100 (a, b){ 
-    return (a + b) < 100
-}
-console.log(lessthan100(22,15));
+// function lessthan100 (a, b){ 
+//     return (a + b) < 100
+// }
+// console.log(lessthan100(22,15));
 
 
 
