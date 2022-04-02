@@ -2,15 +2,14 @@
 //Create a function that takes two numbers as arguments and returns their sum.
 //For example if you write a function "addition", then "addition(2, 4)" should return 6
 //Please write you answer below:
-ans :
-// var x = 2;
-// var y = 4;
-// sum = x + y;
-// console.log(sum);
 
+//var a = 2;
+//var b = 4;
 
-
-
+//function sum(a,b){ 
+//    return a + b
+//}
+//console.log(sum(2,4));
 
 
 // Question 2 :
@@ -19,12 +18,13 @@ ans :
 //Please write you answer below:
 
 
-//var getFirstValue = [1, 2, 3];
+//var array =  [1, 2, 3];
 
-//console.log(getFirstValue[0]);
+//function getFirstValue(array) { 
+ //   return array[0]
+//}
 
-
-
+//console.log(getFirstValue(0))
 
 
 
@@ -48,30 +48,28 @@ ans :
 //For example if you write a function "findPerimeter", then "findPerimeter(6, 7)" should return 26. Formula for finding perimeter is 2 * (length + width)
 //Please write you answer below:
 
-// var p = "perimeter of rectangle"
-// var l = 6, W = 7;
-// switch(p){ 
-//     case "perimeter of rectangle":
-//         console.log("the p of the perimeter of rectangle:" + 2 * (l * W));
+
+//perimeter = (length * 2 ) + (width * 2)
+//return (length * 2 ) + (width * 2)
+//const findperimeter = (length,width)=> { 
+ //   return 2 * length + 2 * width
 //}
 
-
-
-
-
-
+//console.log(findperimeter(6,7));
 
 // Question 5 :
 //Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
 //For example if you write a function "lessThan100", then "lessThan100(22, 15)" should return true as addition of 22 and 15 is 37 which is less than 100
 //Please write you answer below:
 
-// var a = 22;
-// var b = 15;
-// var sum = a + b;
-// //console.log(sum);
-// 37 < 100;
-// console.log(37 < 100);
+ 
+
+// 22 +15 = 37;
+function lessthan100 (a, b){ 
+    return (a + b) < 100
+}
+console.log(lessthan100(22,15));
+
 
 
 
