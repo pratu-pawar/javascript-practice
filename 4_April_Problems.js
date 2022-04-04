@@ -2,6 +2,12 @@
 //for example, if your function is giveSomething("is in the air"), where "is in the air" is argument for function \
 //then expected output is "something is in the air"
 
+function giveSomething(string){
+    return "something" + " " + string
+}
+
+console.log(giveSomething("is in the air"))
+
 //que 2: Create a function that will handle simple math expressions. The input is an expression in the form of a string.
 //calculator("23+4") ➞ 27
 //calculator("45-15") ➞ 30
