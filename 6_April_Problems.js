@@ -10,10 +10,14 @@
 
 //Que 2: Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. 
 //This is calculated by subtracting the number of downvotes from upvotes
-//Examples: getVoteCount({ upvotes: 13, downvotes: 0 }) ➞ 13, getVoteCount({ upvotes: 2, downvotes: 33 }) ➞ -31
-//As you can see, we have passed an object to a function and object contains two key-value pairs, upvotes and downvotes respectively
+//Examples: getVoteCount({ upvotes: 13, downvotes: 0 }) ➞ 13, getVoteCount(0 }{ upvotes: 2, downvotes:33} ) ➞ -31
+//As you can see, we have passed an object to a fgetVoteCoununction and object contains two key-value pairs, upvotes and downvotes respectively
 //Your task is substract downvotes from upvotes and return that number
+function getVoteCount(votes){ 
+    return votes.upvotes - votes.downvotes;
 
+}
+console.log(getVoteCount({upvotes: 2, downvotes:33 }));
 
 //Que 3: Create a function that accepts an array and returns the last item in the array.
 //Examples: getLastItem([1, 2, 3]) ➞ 3, getLastItem(["cat", "dog", "duck"]) ➞ "duck"
