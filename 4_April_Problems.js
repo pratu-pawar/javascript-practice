@@ -2,11 +2,11 @@
 //for example, if your function is giveSomething("is in the air"), where "is in the air" is argument for function \
 //then expected output is "something is in the air"
 
-// function giveSomething(string){
-//     return "something" + " " + string
-// }
+function giveSomething(string){
+    return "something" + " " + string
+}
 
-// console.log(giveSomething("is in the air"))
+console.log(giveSomething("is in the air"))
 
 //que 2: Create a function that will handle simple math expressions. The input is an expression in the form of a string.
 //calculator("23+4") ➞ 27
@@ -21,12 +21,14 @@
 //Examples: isEmpty("") ➞ true, isEmpty(" ") ➞ false, isEmpty("a") ➞ false
 //as shown in examples, you should return if given string is empty or not
 
-//function to check string is empty or not 
-//function checking(str){ 
-   // return(str || str.length === 0)
-//}
-//console.log(checking(""));
-//console.log(checking("a"));
+function isEmpty(str){ 
+   if(str.length > 0){
+      return false
+   }else{
+      return false
+   }
+}
+console.log(isEmpty(""));
 
 
 //que 4: Create a function that takes a word and returns the new word without including the first character
@@ -34,10 +36,10 @@
 //as shown in examples, you should return string after taking out first alphabet of string
 
 
-// function myfunc(word){ 
-//    return word.slice(1,word.length)
-// }
-// console.log(myfunc("apple"));
+function myfunc(word){ 
+   return word.slice(1,word.length)
+}
+console.log(myfunc("apple"));
 
 
 
@@ -46,10 +48,10 @@
 //arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
 //as shown in examples, you should return concatenated string of string of array
 
-// function arrayToString( array,string){ 
-//    return array.join( "") 
-// }
-//     console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
+function arrayToString( array,string){ 
+   return array.join( "") 
+}
+    console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
 
 
 
@@ -59,21 +61,26 @@
 //that string inside the passed array
 
 
-//function findIndex(array,string){ 
-//   return array.indexOf(string)
-//}
+function findIndex(array,string){ 
+  return array.indexOf(string)
+}
 
-//console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh") );
+console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh") );
 
 
 //que 7: Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s"
 //Examples: isPlural("changes") ➞ true, isPlural("change") ➞ false
 //as shown in examples, you should return if given string contains "s" at the end of string
 
-//function isPlural(string){ 
-//   return   string +"s"
-//}
-//console.log(isPlural("change"));
+function isPlural(string){ 
+   const last = string.charAt(string.length - 1);
+   if(last === "s"){
+      return true
+   }else{
+      return false
+   }
+}
+console.log(isPlural("change"));
 
 
 //que 8: Create a function that takes a string and returns the concatenated first and last character
@@ -81,10 +88,12 @@
 //as shown in examples, you should return string with concatenation of first and last letter of passed string
 
 
-//function myfunc(firstLast){ 
- //  return firstLast.slice(1,firstLast.length-1);
-//}
-//console.log(myfunc("ganesh"));
+function myfunc(firstLast){ 
+   const first = firstLast.charAt(0);
+   const last = firstLast.charAt(firstLast.length - 1);
+  return first + last;
+}
+console.log(myfunc("ganesh"));
 
 
 //que 9: Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". 
@@ -93,10 +102,16 @@
 //as shown in examples, you should return string with attaching passed "mood" at the end of "Today, I am feeling"
 //if no "mood" is passed then you should return "Today, I am feeling neutral"
 
-// function moodToday(string){ 
-//    return "today iam feeling" + "  " + string
-// }
-// console.log(moodToday("nutral"));
+function moodToday(string){ 
+   let mood = string
+   if(mood){
+      return "today iam feeling" + "  " + string
+   } else {
+      return "today iam feeling neutral"
+   }
+  
+}
+console.log(moodToday("happy"));
 
 
 //que 10: Given a letter and an array of words, return whether the letter does not appear in any of the words
