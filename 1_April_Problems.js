@@ -16,20 +16,20 @@
 //For example if you write a function "getFirstValue", then "getFirstValue([1, 2, 3])" should return 1
 //Please write you answer below:
 
-function getFirstValue(array) {
-  return array[0]
-}
+// function getFirstValue(array) {
+//   return array[0]
+// }
 
-var inputArray =  [1, 2, 3];
-var secondArray = [4, 5, 6]
+// var inputArray =  [1, 2, 3];
+// var secondArray = [4, 5, 6]
 
-console.log(getFirstValue(inputArray))
+// console.log(getFirstValue(inputArray))
 
-function staticSum() {
-  return 30 + 40
-}
+// function staticSum() {
+//   return 30 + 40
+// }
 
-console.log(staticSum())
+//console.log(staticSum())
 
 // Question 3 :
 //Write a function that converts hours into seconds.

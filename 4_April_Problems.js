@@ -2,11 +2,11 @@
 //for example, if your function is giveSomething("is in the air"), where "is in the air" is argument for function \
 //then expected output is "something is in the air"
 
-function giveSomething(string){
-    return "something" + " " + string
-}
+// function giveSomething(string){
+//     return "something" + " " + string
+// }
 
-console.log(giveSomething("is in the air"))
+// console.log(giveSomething("is in the air"))
 
 //que 2: Create a function that will handle simple math expressions. The input is an expression in the form of a string.
 //calculator("23+4") ➞ 27
@@ -15,18 +15,43 @@ console.log(giveSomething("is in the air"))
 //calculator("49/7*2-3") ➞ 11
 //above given are sample examples, you are expected to give output as shown above for passed string as an argument to function
 
+
+
 //que 3: Create a function that returns true if a string is empty and false otherwise
 //Examples: isEmpty("") ➞ true, isEmpty(" ") ➞ false, isEmpty("a") ➞ false
 //as shown in examples, you should return if given string is empty or not
+
+//function to check string is empty or not 
+//function checking(str){ 
+   // return(str || str.length === 0)
+//}
+//console.log(checking(""));
+//console.log(checking("a"));
+
 
 //que 4: Create a function that takes a word and returns the new word without including the first character
 //Examples : newWord("apple") ➞ "pple", newWord("cherry") ➞ "herry", newWord("plum") ➞ "lum"
 //as shown in examples, you should return string after taking out first alphabet of string
 
+
+// function myfunc(word){ 
+//    return word.slice(1,word.length)
+// }
+// console.log(myfunc("apple"));
+
+
+
 //que 5: Create a function that takes an array of numbers or letters and returns a string
 //Examples : arrayToString([1, 2, 3, 4, 5, 6]) ➞ "123456", arrayToString(["a", "b", "c", "d", "e", "f"]) ➞ "abcdef", 
 //arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
 //as shown in examples, you should return concatenated string of string of array
+
+// function arrayToString( array,string){ 
+//    return array.join( "") 
+// }
+//     console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
+
+
 
 //que 6: Create a function that takes an array and a string as arguments and returns the index of the string
 //Examples: findIndex(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2, findIndex(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
@@ -34,20 +59,44 @@ console.log(giveSomething("is in the air"))
 //that string inside the passed array
 
 
+//function findIndex(array,string){ 
+//   return array.indexOf(string)
+//}
+
+//console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh") );
+
+
 //que 7: Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s"
 //Examples: isPlural("changes") ➞ true, isPlural("change") ➞ false
 //as shown in examples, you should return if given string contains "s" at the end of string
+
+//function isPlural(string){ 
+//   return   string +"s"
+//}
+//console.log(isPlural("change"));
 
 
 //que 8: Create a function that takes a string and returns the concatenated first and last character
 //Examples : firstLast("ganesh") ➞ "gh", firstLast("kali") ➞ "ki"
 //as shown in examples, you should return string with concatenation of first and last letter of passed string
 
+
+//function myfunc(firstLast){ 
+ //  return firstLast.slice(1,firstLast.length-1);
+//}
+//console.log(myfunc("ganesh"));
+
+
 //que 9: Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". 
 //However, if no argument is passed, return "Today, I am feeling neutral"
 //Examples: moodToday("happy") ➞ "Today, I am feeling happy", moodToday() ➞ "Today, I am feeling neutral"
 //as shown in examples, you should return string with attaching passed "mood" at the end of "Today, I am feeling"
 //if no "mood" is passed then you should return "Today, I am feeling neutral"
+
+// function moodToday(string){ 
+//    return "today iam feeling" + "  " + string
+// }
+// console.log(moodToday("nutral"));
 
 
 //que 10: Given a letter and an array of words, return whether the letter does not appear in any of the words
