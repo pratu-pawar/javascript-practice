@@ -14,10 +14,14 @@
 //Examples: isAvgWhole([1, 3]) ➞ true, isAvgWhole([1, 2, 3, 4]) ➞ false
 //Whole numbers means, a number without fractions. So in first example average of 2 elements is (1 + 3)/2 = 2, which is whole numbers
 //hence it returned true
-function isAvgWhole(array){ 
-    return  array.every(val => val === array[0]);
-}
-console.log(isAvgWhole([1, 2, 3, 4]));
+
+
+//function isAvgWhole(array){ 
+ //   return  array.every(val => val === array[0]);
+//}
+//console.log(isAvgWhole([1, 2, 3, 4]));
+
+
 
 //Create a function that takes an array of numbers and returns a new array, sorted in ascending order (smallest to biggest)
 //Examples : sortNumsAscending([1, 2, 10, 50, 5]) ➞ [1, 2, 5, 10, 50], sortNumsAscending([80, 29, 4, -95, -24, 85]) ➞ [-95, -24, 4, 29, 80, 85]
