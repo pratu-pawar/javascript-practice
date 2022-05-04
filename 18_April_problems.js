@@ -7,6 +7,16 @@
 //Hint: for given amount divide it into 10 parts, then for "needs" multiply one part by 5, for "wants" multiply by 3 and for
 // "savings" multiply by 2. Finally put that values in object and return that object.
 
+const fiftyThirtyTwenty = (money) => {
+  let onePart = money / 10;
+  let needs = onePart * 5;
+  let wants = onePart * 3;
+  let savings = onePart * 2;
+  return { Needs: needs, Wants: wants, Savings: savings };
+};
+
+console.log(fiftyThirtyTwenty(7585))
+
 //Que 2: Create a function that takes a whole number as input and returns the shape with that number's amount of sides.
 //Here are the expected outputs to get from these inputs.
 // Inputs	Outputs
@@ -25,18 +35,8 @@
 
 //Hint: I'll create objects for shapes and inputs, you will have to use for...in loop to determine the shape for given input
 //Example of for...in loop:
-// const object = { a: 1, b: 2, c: 3 };
 
-// for (const property in object) {
-//   console.log(`${property}: ${object[property]}`);
-// }
-
-// expected output:
-// "a: 1"
-// "b: 2"
-// "c: 3"
-
-const object = {
+const sideObject = {
   1: "circle",
   2: "semi-circle",
   3: "triangle",
@@ -48,3 +48,13 @@ const object = {
   9: "nonagon",
   10: "decagon",
 };
+
+function nSidedShape(sides) {
+  for (const property in sideObject) {
+    if (sides == property) {
+      return sideObject[sides];
+    }
+  }
+}
+
+console.log(nSidedShape(5));
