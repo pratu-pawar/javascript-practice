@@ -25,7 +25,7 @@ console.log(person);
 // 3. Write another line of code that adds a new property to your penguin called canFly and set it to false.
 //(Note: Don't modify your penguin-creation code that you wrote above! Do this step in a separate line of code.)
 
-myPenguin.canfly = false;
+myPenguin.canFly = false;
 
 console.log(myPenguin);
 
@@ -42,8 +42,7 @@ console.log(myPenguin.chirp());
 //so that way if you change its name later, your method will still work!
 
 myPenguin.sayHello = function(){ 
-    this.author = "A K Ramanujan";
-    console.log("hello i am penguin and my name is " + this.author);
+    console.log("hello i am penguin and my name is " + " " + this.character);
 }
 console.log(myPenguin.sayHello());
 
@@ -51,48 +50,43 @@ console.log(myPenguin.sayHello());
 //(Hint: if you need an example of what it looks like when you call a method of an object
 //look at console.log() -- that's how you call the log() method of the console object
 
-myPenguin.sayHello()
+console.log(myPenguin.sayHello());
 
 
 // 7. Without modifying any of your previous code, change the penguin's name to "Penguin McPenguinFace"
 //and then call your penguin's sayHello() function one more time to make sure it still works.
 
 myPenguin.character = "Penguin McPenguinFace";
- myPenguin.sayHello();
 
  console.log(myPenguin.sayHello());
 
 // 8. Write another method called fly, and inside that method, use an if / else statement to print "I can fly!" to the console
 //if your penguin's canFly property is true, or "No flying for me!" if its canFly property is false.
-myPenguin.canfly = function(){ 
-    if("i can fly"){ 
-        console.log(true);
+myPenguin.fly = function(){ 
+    if(this.canFly == true){ 
+        console.log("I can fly!");
 
-}else("No flying for me") 
-    console.log(false);
+}else(this.canFly == false) 
+    console.log("No flying for me!");
 }
-
-
-console.log(myPenguin.canfly());
 
 // 9. Call your penguin's fly() method and make sure it works!
-myPenguin.fly = function() { 
-    console.log("hello fly method");
-}
-console.log(myPenguin.fly());
-// 10. Change the canFly property to true -- again, without modifying any of your previous code!
-myPenguin.canfly = true;
 
-console.log(myPenguin);
+console.log(myPenguin.fly());
+
+// 10. Change the canFly property to true -- again, without modifying any of your previous code!
+myPenguin.canFly = true;
+
 // 11. Now call y;ur penguin's fly() method again and make sure it works as expected!
-myPenguin.fly();
+
+console.log(myPenguin.fly());
 
 // 12. Write a for ... in loop to print each key to the console. (Hint: See this page for an example of this special type of loop.)
 
    for (property in myPenguin) {
        console.log(property);
      }
-     console.log();
+
 // 13. Write another for ... in loop to print the value of each key to the console.
 //(Hint: You'll need to use bracket notation to access the values this way, instead of dot notation!)
 
