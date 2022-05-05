@@ -47,16 +47,16 @@
 // where r is the radius and h is the height of the cylinder.
 //Please use object constructor and object will take radius, with the use of radius write the method to find volume of cylinder
 
-function Cylinder(radius,height){ 
-    this.radius = radius,
-    this.height = height
-    this.volume = function(){ 
-     return Math.PI*this.radius* this.radius * this.height
-    }
-};
+// function Cylinder(radius,height){ 
+//     this.radius = radius,
+//     this.height = height
+//     this.volume = function(){ 
+//      return Math.PI*this.radius* this.radius * this.height
+//     }
+// };
 
-const cylinder =  new Cylinder( 7, 4)
-console.log(cylinder.volume());
+// const cylinder =  new Cylinder( 7, 4)
+// console.log(cylinder.volume());
 
 //5. Add a new key:value pair (age:25) in following object
 //var Pratiksha = {name:"Pratiksha", color:"White"}
