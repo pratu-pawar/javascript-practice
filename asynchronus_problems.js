@@ -143,7 +143,7 @@ async function executor(){
      await asyncFunc3();
      console.log('All succeeded');
 }
-catch(){ 
+catch{ 
     console.log("Error occured");
 }
-} ();
+} 
